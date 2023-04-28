@@ -8,18 +8,18 @@
   <nav class="nav">
     <div class="spacer" />
     <div class="right">
-      <a href="/posts" title="Blog">
-        <span class="lt-md:hidden">Blog</span>
+      <a href="/articles" title="Articles">
+        <span class="lt-md:hidden">Articles</span>
         <div class="md:hidden i-ri-article-line" />
       </a>
-      <a href="/project" title="Project">
+      <!-- <a href="/project" title="Project">
         <span class="lt-md:hidden">Project</span>
         <div class="md:hidden i-ri-lightbulb-line" />
-      </a>
+      </a> -->
       <a class="lt-md:hidden" href="https://twitter.com/vtrbo88" target="_blank" title="Twitter">
         <div class="i-feather-twitter" />
       </a>
-      <a class="lt-md:hidden" href="https://github.com/antfu" target="_blank" title="GitHub">
+      <a class="lt-md:hidden" href="https://github.com/vtrbo" target="_blank" title="GitHub">
         <div class="i-uil-github-alt" />
       </a>
     </div>

@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetIcons, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
 import extractorSvelte from '@unocss/extractor-svelte'
 import { collectionIcons } from './src/lib/icons'
 
@@ -21,7 +21,12 @@ export default defineConfig({
         vtr: collectionIcons(),
       },
     }),
-    presetAttributify(),
+    presetWebFonts({
+      fonts: {
+        sans: 'Inter:400,600,800',
+        mono: 'DM Mono',
+      },
+    }),
   ],
   transformers: [
     transformerDirectives(),

@@ -1,3 +1,10 @@
 {
-	"extends": "@vtrbo"
+	"extends": "@vtrbo",
+	"overrides": [
+		{
+			"files": ["*.svelte"],
+			"rules": {
+			}
+		}
+	]
 }
