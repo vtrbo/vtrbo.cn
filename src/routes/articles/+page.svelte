@@ -27,6 +27,7 @@
       }
     })
 </script>
+
 <div class="prose m-auto mb-8">
   <h1 class="mb-0">Articles</h1>
   <p class="opacity-50 im-mt--1.25rem italic">List of articles that I wrote.</p>

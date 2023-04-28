@@ -34,6 +34,6 @@ jobs:
         with:
           # cname: vtrbo.cn
           publish_branch: site
-          publish_dir: ./.svelte-kit/output/
+          publish_dir: ./build
           commit_message: Release by
           github_token: ${{secrets.PERSONAL_ACCESS_TOKEN}}

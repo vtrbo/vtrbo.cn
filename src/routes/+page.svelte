@@ -1,7 +1,5 @@
 <script lang="ts">
-  import type { PageData } from './$types'
-
-  export let data: PageData
+  import Resume from './resume.md'
 </script>
 
 <div class="prose m-auto mb-8">
@@ -9,6 +7,6 @@
 </div>
 <article>
   <div class="prose m-auto">
-    {@html data.content}
+    <Resume />
   </div>
 </article>
