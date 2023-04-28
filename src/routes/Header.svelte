@@ -12,10 +12,10 @@
         <span class="lt-md:hidden">Articles</span>
         <div class="md:hidden i-ri-article-line" />
       </a>
-      <!-- <a href="/project" title="Project">
+      <a href="/projects" title="Project">
         <span class="lt-md:hidden">Project</span>
         <div class="md:hidden i-ri-lightbulb-line" />
-      </a> -->
+      </a>
       <a class="lt-md:hidden" href="https://twitter.com/vtrbo88" target="_blank" title="Twitter">
         <div class="i-feather-twitter" />
       </a>
