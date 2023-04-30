@@ -32,7 +32,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # cname: vtrbo.cn
+          cname: www.vtrbo.cn
           publish_branch: site
           publish_dir: ./build
           commit_message: Release by
