@@ -10,9 +10,9 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.56",
+    "@iconify/json": "^2.2.60",
     "@sveltejs/adapter-static": "^2.0.2",
-    "@sveltejs/kit": "^1.15.8",
+    "@sveltejs/kit": "^1.15.11",
     "@unocss/extractor-svelte": "^0.51.8",
     "@unocss/reset": "^0.51.8",
     "@vtrbo/eslint-config": "^0.3.5",
@@ -25,6 +25,6 @@
     "typescript": "^5.0.4",
     "unocss": "^0.51.8",
     "unplugin-icons": "^0.16.1",
-    "vite": "^4.3.2"
+    "vite": "^4.3.4"
   }
 }
