@@ -20,5 +20,11 @@ export interface Article {
 export const moduleName = 'articles'
 
 export const articles = readable<Article[]>([
-
+  // 需要解决 code 高亮的问题
+  // {
+  //   title: '渲染Markdown(sveltekit/mdsvex)',
+  //   filename: 'render-markdown-sveltekit-mdsvex-zh',
+  //   date: new Date('2023-05-04'),
+  //   zh: true,
+  // },
 ])
