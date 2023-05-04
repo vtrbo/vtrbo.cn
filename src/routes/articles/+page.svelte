@@ -44,7 +44,7 @@
       </div>
     {/if}
     <ul>
-      <a class="item block font-normal mb-6 mt-2 no-underline" href={article.route}>
+      <a class="item block font-normal mb-6 mt-2 no-underline" href={`${moduleName}/detail?filename=${article.filename}`}>
         <li class="no-underline">
           <div class="title text-lg leading-1.2em">
             {#if article.zh}
@@ -66,3 +66,7 @@
     </ul>
   </div>
 {/each}
+<div class="prose m-auto mt-8 mb-4">
+  <span class="font-mono op50">> </span>
+  <a class="font-mono op50 hover:op75" href="/">cd ..</a>
+</div>

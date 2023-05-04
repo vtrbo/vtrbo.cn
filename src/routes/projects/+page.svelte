@@ -28,6 +28,10 @@
     {/each}
   {/each}
 </div>
+<div class="prose m-auto mt-8 mb-4">
+  <span class="font-mono op50">> </span>
+  <a class="font-mono op50 hover:op75" href="/">cd ..</a>
+</div>
 
 <style>
 .project-grid {
