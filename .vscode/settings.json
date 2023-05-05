@@ -5,6 +5,9 @@
     "source.fixAll.eslint": true
   },
   "cSpell.words": [
-    "mdsvex"
+    "antfu",
+    "mdsvex",
+    "shiki",
+    "vitesse"
   ]
 }
