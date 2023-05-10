@@ -13,8 +13,8 @@
     {#if group.projects.length}
       <h4 class="mt-10 font-bold">{group.group}</h4>
     {/if}
-    {#each group.projects as project}
-      <div class="project-grid py-2 -mx-3 gap-2">
+    <div class="project-grid py-2 -mx-3 gap-2">
+      {#each group.projects as project}
         <a class="item relative flex items-center" href={project.link}>
           <div class="pt-2 pr-5">
             <div class={`text-3xl opacity-50 saturate-0 ${project.icon}`} />
@@ -24,8 +24,8 @@
             <div class="desc text-sm opacity-50 font-normal">{project.description}</div>
           </div>
         </a>
-      </div>
-    {/each}
+      {/each}
+    </div>
   {/each}
 </div>
 <div class="prose m-auto mt-8 mb-4">

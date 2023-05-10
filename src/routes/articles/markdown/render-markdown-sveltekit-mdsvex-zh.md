@@ -1,8 +1,6 @@
-> 感谢 [@antfu](https://github.com/antfu/)，样式参考 [antfu.me](https://antfu.me/)  
-
 我一直有一个写 Blog 的想法，可能是因为我比较懒，或者是没有好看的UI设计，又或者是已经有很多 Blog 的 [React](https://react.dev/)/[Vue](https://vuejs.org/) 的模板等等原因，一直都没有着手写。  
 
-最近一直在看 [svelte](https://www.svelte.cn/) 和 [sveltekit](https://kit.svelte.dev/) ，因此想使用svelte来实现我的Blog，过程中遇到了一些问题，在这里记录及分享一下。
+最近一直在看 [Svelte](https://www.svelte.cn/) 和 [SvelteKit](https://kit.svelte.dev/) ，因此想使用 Svelte 来实现我的 Blog ，难点在于如何渲染 Markdown 文件，基于对这个问题的探索。
 
 ## 你可能需要获取一个 sveltekit 项目
 
@@ -154,9 +152,9 @@ declare module '*.md' {
 
 ## 到这里基本就结束了
 
-从结果上来看，配置 sveltekit 中适用 mdsvex 还是蛮简单的。  
+从结果上来看，配置 SvelteKit 中使用 Mdsvex 还是蛮简单的。  
 
-mdsvex 有几项配置，就我个人搭建这个博客而言，还是有很多力不从心的地方。  
+Mdsvex 有几项配置，就我个人搭建这个博客而言，还是有很多力不从心的地方。  
 
 就唠到这里吧，希望我的配置是可以被你轻松使用的，可能有很多的错误，欢迎交流...  
 
@@ -164,12 +162,12 @@ mdsvex 有几项配置，就我个人搭建这个博客而言，还是有很多�
 
 ### 代码格式化 [@vtrbo/eslint-config](https://github.com/vtrbo/eslint-config)
 
-<sup>Fork <a href="https://github.com/antfu">antfu</a> 大佬的 <a href="https://github.com/antfu/eslint-config">@antfu/eslint-config</a>，扩展了对 `svelte` 文件的支持，当然还不是很完善，欢迎PR。</sup>
+<sup>Fork <a href="https://github.com/antfu">antfu</a> 的 <a href="https://github.com/antfu/eslint-config">@antfu/eslint-config</a>，扩展了对 `svelte` 文件的支持，当然还不是很完善，欢迎PR。</sup>
 
-#### 安装 @vtrbo/eslint-config
+#### 安装 eslint 和 @vtrbo/eslint-config
 
 ```bash
-npm install @vtrbo/eslint-config -DS
+npm install eslint @vtrbo/eslint-config -DS
 ```
 
 #### 在 <em>`.eslintrc`</em> 中配置
@@ -192,7 +190,7 @@ npm install @vtrbo/eslint-config -DS
 
 ```json
 {
-  // 关闭 prettier, 我和 antfu 大佬的观点一致
+  // 关闭 prettier, 我和 antfu 的观点一致
   "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
@@ -275,9 +273,7 @@ import 'uno.css'
 npm install shiki -DS
 ```
 
-#### 在 mdsvex 配置
-
-<sup><em>`svelte.config.js`</em></sup>
+#### 在 <em>`svelte.config.js`</em> 中配置
 
 ```js
 // ...
