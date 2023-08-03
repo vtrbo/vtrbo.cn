@@ -37,7 +37,7 @@ export const projectGroups = readable<ProjectGroup[]>([
       },
       {
         icon: 'i-logos:svelte-icon',
-        title: 'starter-kit',
+        title: 'starter-svelte-kit',
         description: 'Starter Template For SvelteKit.',
         link: 'https://github.com/vtrbo/starter-kit',
       },
@@ -56,6 +56,46 @@ export const projectGroups = readable<ProjectGroup[]>([
     ],
   },
   {
+    group: 'Utilities / CLI',
+    projects: [
+      {
+        icon: 'i-tabler:math-function',
+        title: 'utils',
+        description: 'Collection of common JavaScript or TypeScript utils.',
+        link: 'https://github.com/vtrbo/utils',
+      },
+      {
+        icon: 'i-devicon-plain:powershell',
+        title: 'cli',
+        description: 'Start a project.',
+        link: 'https://github.com/vtrbo/cli',
+      },
+      {
+        icon: 'i-ic:outline-cloud-download',
+        title: 'load-repo',
+        description: 'Download git repository.',
+        link: 'https://github.com/vtrbo/load-repo',
+      },
+    ],
+  },
+  {
+    group: 'Plugins',
+    projects: [
+      {
+        icon: 'i-fa6-regular:images',
+        title: 'unplugin-vue-images',
+        description: 'Use the image resource as a component in the vue project.',
+        link: 'https://github.com/vtrbo/unplugin-vue-images',
+      },
+      {
+        icon: 'i-mingcute:plugin-2-line',
+        title: 'vitepress-plugins',
+        description: 'Vitepress plugins map.',
+        link: 'https://github.com/vtrbo/vitepress-plugins',
+      },
+    ],
+  },
+  {
     group: 'VS Code Extensions',
     projects: [
       {
@@ -66,23 +106,6 @@ export const projectGroups = readable<ProjectGroup[]>([
       },
     ],
   },
-  // {
-  //   group: 'Utilities / CLI',
-  //   projects: [
-  //     {
-  //       icon: 'i-logos:eslint',
-  //       title: 'utils',
-  //       description: 'My Eslint Config Preset.',
-  //       link: 'https://github.com/vtrbo/eslint-config',
-  //     },
-  //     {
-  //       icon: 'i-logos:eslint',
-  //       title: 'cli',
-  //       description: 'My Eslint Config Preset.',
-  //       link: 'https://github.com/vtrbo/eslint-config',
-  //     },
-  //   ],
-  // },
   {
     group: 'Configurations',
     projects: [
