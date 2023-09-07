@@ -1,4 +1,12 @@
-import { defineConfig, presetIcons, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
+import type { CSSEntries } from 'unocss'
+import {
+  defineConfig,
+  presetIcons,
+  presetUno,
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 import extractorSvelte from '@unocss/extractor-svelte'
 import { collectionIcons } from './src/lib/icons'
 
@@ -33,13 +41,13 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   variants: [
-    (matcher) => {
+    (matcher: string) => {
       if (!matcher.startsWith('im-'))
         return matcher
       return {
         matcher: matcher.slice(3),
-        body: (body) => {
-          body.forEach(v => v[1] && (v[1] += ' !important'))
+        body: (body: CSSEntries) => {
+          body.forEach((v: [string, string | number | undefined]) => v[1] && (v[1] += ' !important'))
           return body
         },
       }
