@@ -40,7 +40,7 @@
   <div class="prose m-auto">
     {#if ai === 0 || computeArticles[ai - 1].year !== article.year}
       <div class="h20 pointer-events-none relative">
-        <span class="absolute font-bold left--3.5rem op10 text-8em top--2rem">{article.year}</span>
+        <span class="absolute font-bold left--3.5rem op10 text-8em top--2rem lt-sm:left--0.5rem">{article.year}</span>
       </div>
     {/if}
     <ul>
