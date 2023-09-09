@@ -3,4 +3,4 @@ NODE_VERSION = "18"
 
 [build]
 command = "npm run build"
-publish = "build"
+publish = "/.svelte-kit/output"
