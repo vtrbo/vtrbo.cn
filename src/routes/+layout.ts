@@ -1,5 +1,5 @@
 import '@unocss/reset/tailwind.css'
-import '../styles/main.css'
-import '../styles/prose.css'
-import '../styles/markdown.css'
+import '$lib/styles/main.css'
+import '$lib/styles/prose.css'
+import '$lib/styles/markdown.css'
 import 'uno.css'
