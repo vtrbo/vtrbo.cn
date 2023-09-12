@@ -4,7 +4,7 @@
 </script>
 
 <header class="header z-40">
-	<a class="w-10 h-10 absolute lg:fixed m-6 select-none outline-none fcc text-6 op-50" href="/static">
+	<a class="w-10 h-10 absolute lg:fixed m-6 select-none outline-none fcc text-6 op-50" href="/">
 		<span class="i-vtr-logo" />
 	</a>
 	<nav class="nav">
