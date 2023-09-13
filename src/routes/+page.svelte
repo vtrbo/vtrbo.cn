@@ -1,5 +1,5 @@
-<script lang="ts">
-	import Resume from '@routes/resume.md';
+<script>
+	import Resume from './resume.md';
 </script>
 
 <Resume />
