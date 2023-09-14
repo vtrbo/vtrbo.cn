@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
@@ -8,14 +8,16 @@ const config = {
 	extensions: [...mdsvexConfig.extensions, '.svelte'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			edge: false,
+			split: false
+		}),
 		alias: {
 			'@components/*': './src/routes/components/*',
 			'@layouts/*': './src/routes/layouts/*',
 			'@routes/*': './src/routes/*',
 			'@stores/*': './src/stores/*',
-			'@articles/*': './src/articles/*',
-			'~/*': './src/*'
+			'@articles/*': './src/articles/*'
 		}
 	}
 };
