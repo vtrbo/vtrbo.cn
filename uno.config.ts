@@ -1,5 +1,3 @@
-import type { UserShortcuts } from 'unocss';
-import type { Theme } from '@unocss/preset-uno';
 import {
 	defineConfig,
 	presetAttributify,
@@ -16,7 +14,7 @@ export default defineConfig({
 	shortcuts: [
 		{
 			'bg-base': 'bg-white dark:bg-black',
-			'border-base': 'border-[#8884]'
+			'bd-base': 'border-[#8884]'
 		},
 		{
 			fs: 'flex justify-start',
@@ -24,17 +22,21 @@ export default defineConfig({
 			fc: 'flex justify-center',
 			fcc: 'flex justify-center items-center'
 		},
+		{
+			title: 'm-auto mb-8 [&>h1]:mb-0 [&>p]:(opacity-50 im-mt--1.1rem italic)',
+			article: 'm-auto slide-enter-content'
+		},
 		[
 			/^btn-(\w+)$/,
-			([_, color]: UserShortcuts<Theme>) =>
-				`op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border border-base! rounded`
+			([_, color]) =>
+				`op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border bd-base! rounded`
 		],
-		[/^full-(.*)$/, ([_, size]: UserShortcuts<Theme>) => `w-${size} h-${size}`]
+		[/^full-(.*)$/, ([_, size]) => `w-${size} h-${size}`]
 	],
 	rules: [
 		[
 			/^slide-enter-(\d+)$/,
-			([_, n]: UserShortcuts<Theme>) => ({
+			([_, n]) => ({
 				'--enter-stage': n
 			})
 		]

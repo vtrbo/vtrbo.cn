@@ -12,7 +12,10 @@ const config = {
 		alias: {
 			'@components/*': './src/routes/components/*',
 			'@layouts/*': './src/routes/layouts/*',
-			'@routes/*': './src/routes/*'
+			'@routes/*': './src/routes/*',
+			'@stores/*': './src/stores/*',
+			'@articles/*': './src/articles/*',
+			'~/*': './src/*'
 		}
 	}
 };
