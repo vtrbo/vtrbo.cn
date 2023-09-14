@@ -5,5 +5,4 @@
 	$: ({ article, articles } = data);
 </script>
 
-<div>test</div>
 <svelte:component this={article} {articles} />
