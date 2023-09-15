@@ -19,7 +19,7 @@
 <article>
 	<div class="prose m-auto slide-enter-content">
 		{#if !articles.length}
-			<div class="prose m-auto text-center py20 op30">
+			<div class="prose m-auto text-center py20 !op30">
 				<div class="text-20 i-iconoir:glass-empty"></div>
 				<div class="my-2">Nothing Here Yet</div>
 			</div>
