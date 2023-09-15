@@ -25,9 +25,9 @@ export default defineConfig({
 			fcc: 'flex justify-center items-center'
 		},
 		{
-			title: 'm-auto mb-8 [&>h1]:mb-0 [&>p]:(opacity-50 im-mt--1.1rem italic)',
-			article: 'm-auto slide-enter-content',
-			back: 'm-auto mt-8 mb-4 [&>span]:(font-mono op50) [&>a]:(font-mono op50 hover:op75)'
+			'blog-title': 'm-auto mb-8 [&>h1]:mb-0 [&>p]:(opacity-50 im-mt--1.1rem italic)',
+			'blog-article': 'm-auto slide-enter-content',
+			'blog-back': 'm-auto mt-8 mb-4 [&>span]:(font-mono op50) [&>a]:(font-mono op50 hover:op75)'
 		},
 		[
 			/^btn-(\w+)$/,

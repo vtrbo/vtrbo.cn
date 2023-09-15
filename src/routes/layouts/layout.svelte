@@ -7,11 +7,11 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="prose title">
+<div class="prose blog-title">
 	<h1>{title}</h1>
 </div>
 <article>
-	<div class="prose article">
+	<div class="prose blog-article">
 		<slot />
 	</div>
 </article>

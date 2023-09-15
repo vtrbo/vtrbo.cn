@@ -7,7 +7,7 @@
 	<title>Projects - VictorBo</title>
 </svelte:head>
 
-<div class="prose title text-center">
+<div class="prose blog-title text-center">
 	<h1>Projects</h1>
 	<p>List of projects that I am proud of.</p>
 </div>

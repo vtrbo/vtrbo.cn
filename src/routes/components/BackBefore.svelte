@@ -2,7 +2,7 @@
 	export let path: string = '';
 </script>
 
-<div class="back prose">
+<div class="blog-back prose">
 	<span>> </span>
 	<a href={path || '/'}>cd ..</a>
 </div>
