@@ -17,7 +17,8 @@ const config = {
 			'@layouts/*': './src/routes/layouts/*',
 			'@routes/*': './src/routes/*',
 			'@stores/*': './src/stores/*',
-			'@articles/*': './src/articles/*'
+			'@articles/*': './src/articles/*',
+			'@projects/*': './src/projects/*'
 		}
 	}
 };

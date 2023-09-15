@@ -1,7 +1,7 @@
 import type { ImportModule } from '$lib/scan/types';
 
 export interface Article {
-	// 文件名
+	// 文件 'src/articles/**/*.md'
 	name?: string;
 	// 标题
 	title: string;

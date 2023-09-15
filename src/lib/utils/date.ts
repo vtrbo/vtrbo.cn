@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-export function getYear(date: Date): number {
+export function getYear(date: string | Date): number {
 	return dayjs(date).year();
 }
 

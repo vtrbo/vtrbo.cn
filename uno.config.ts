@@ -4,6 +4,8 @@ import {
 	presetIcons,
 	presetUno,
 	presetWebFonts,
+	transformerAttributifyJsx,
+	transformerCompileClass,
 	transformerDirectives,
 	transformerVariantGroup
 } from 'unocss';
@@ -24,7 +26,8 @@ export default defineConfig({
 		},
 		{
 			title: 'm-auto mb-8 [&>h1]:mb-0 [&>p]:(opacity-50 im-mt--1.1rem italic)',
-			article: 'm-auto slide-enter-content'
+			article: 'm-auto slide-enter-content',
+			back: 'm-auto mt-8 mb-4 [&>span]:(font-mono op50) [&>a]:(font-mono op50 hover:op75)'
 		},
 		[
 			/^btn-(\w+)$/,
@@ -43,19 +46,20 @@ export default defineConfig({
 	],
 	presets: [
 		presetIcons({
-			mode: 'mask',
+			warn: true,
+			scale: 1.2,
 			extraProperties: {
 				display: 'inline-block',
-				height: '1.2em',
-				width: '1.2em',
-				'vertical-align': 'text-bottom'
+				'vertical-align': 'middle'
 			},
 			collections: {
 				vtr: collectionIcons()
 			}
 		}),
 		presetAttributify(),
-		presetUno(),
+		presetUno({
+			dark: 'class'
+		}),
 		presetWebFonts({
 			fonts: {
 				sans: 'Inter:400,600,800',
@@ -63,7 +67,12 @@ export default defineConfig({
 			}
 		})
 	],
-	transformers: [transformerVariantGroup(), transformerDirectives()],
+	transformers: [
+		transformerVariantGroup(),
+		transformerDirectives(),
+		transformerCompileClass(),
+		transformerAttributifyJsx()
+	],
 	safelist: ['i-ri-menu-2-fill'],
 	extractors: [extractorSvelte()]
 });

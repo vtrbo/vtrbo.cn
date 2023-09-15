@@ -36,15 +36,11 @@
 		grid-template-columns: auto max-content;
 		box-sizing: border-box;
 
-		& > * {
+		& * {
 			--at-apply: m-auto;
 		}
 
-		& > img {
-			--at-apply: mb-0;
-		}
-
-		& > a {
+		& a {
 			--at-apply: cursor-pointer no-underline color-inherit op-60 outline-none;
 			transition: opacity 0.2s ease;
 
