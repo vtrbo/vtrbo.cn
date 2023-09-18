@@ -11,7 +11,7 @@ const langMap = {
 	sveltehtml: 'svelte'
 };
 
-const highlight = async (code, lang) => {
+async function highlight(code, lang) {
 	const themes = {
 		light: 'vitesse-light',
 		dark: 'vitesse-dark'
@@ -32,9 +32,9 @@ const highlight = async (code, lang) => {
 		themes,
 		cssVariablePrefix: '--s-'
 	});
-};
+}
 
-const layout = './src/routes/layouts/layout.svelte';
+const layout = './src/routes/layouts/default.svelte';
 
 export default {
 	layout,
