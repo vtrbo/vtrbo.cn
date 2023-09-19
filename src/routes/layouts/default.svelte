@@ -11,7 +11,7 @@
 	<h1>{title}</h1>
 </div>
 <article>
-	<div class="prose blog-article">
+	<div class="prose blog-article slide-enter-content">
 		<slot />
 	</div>
 </article>

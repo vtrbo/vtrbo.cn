@@ -1,6 +1,7 @@
+import { error } from '@sveltejs/kit';
+import type { SvelteComponent } from 'svelte';
 import type { ImportModule } from '$lib/scan/types';
 import type { Article } from '$lib/scan/atricles';
-import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params: { name = '' } = {}, data: { articles = [] } = {} }) {
@@ -9,8 +10,11 @@ export async function load({ params: { name = '' } = {}, data: { articles = [] }
 		return {
 			article,
 			articles
+		} as unknown as {
+			article: SvelteComponent;
+			articles: Article[];
 		};
 	} catch (e) {
-		throw error(404, 'post cannot be found: ' + name);
+		throw error(404, `post cannot be found: ${name}`);
 	}
 }

@@ -2,6 +2,13 @@
   "name": "vtrbo.cn",
   "type": "module",
   "private": true,
+  "description": "Victor Bo's Blog",
+  "author": {
+    "name": "Victor Bo",
+    "email": "hi@vtrbo.cn"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/vtrbo/vtrbo.cn",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -14,14 +21,14 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.8",
-    "@iconify/json": "^2.2.116",
+    "@iconify/json": "^2.2.117",
     "@sveltejs/adapter-netlify": "^2.0.8",
     "@sveltejs/kit": "^1.25.0",
-    "@types/node": "^20.6.1",
+    "@types/node": "^20.6.2",
     "@unocss/extractor-svelte": "^0.55.7",
     "@unocss/preset-uno": "^0.55.7",
     "@unocss/reset": "^0.55.7",
-    "@vtrbo/eslint-config": "^0.4.2",
+    "@vtrbo/eslint-config": "^0.4.5",
     "@vtrbo/utils": "^0.3.6",
     "dayjs": "^1.11.9",
     "eslint": "^8.49.0",

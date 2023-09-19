@@ -1,5 +1,5 @@
-import { getArticles } from '$lib/scan/atricles';
 import { error } from '@sveltejs/kit';
+import { getArticles } from '$lib/scan/atricles';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params: { name = '' } = {} }) {

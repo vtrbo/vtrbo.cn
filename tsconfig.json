@@ -1,13 +1,36 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "noImplicitAny": true,
     "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "types": [
+      "node",
+      "vite/client"
+    ]
   },
+  "include": [
+    "*.config.ts",
+    "*.config.js",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "src/**/*.svelte"
+  ],
+  "exclude": [
+    "node_modules/*",
+    ".svelte-kit/*"
+  ]
 }

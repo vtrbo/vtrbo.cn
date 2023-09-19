@@ -2,5 +2,13 @@
 	"extends": [
 		"@vtrbo",
 		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["*.svelte"],
+			"rules": {
+				"import/no-mutable-exports": "off"
+			}
+		}
 	]
 }

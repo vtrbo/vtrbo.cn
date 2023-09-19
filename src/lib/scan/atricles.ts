@@ -17,8 +17,10 @@ export interface Article {
 	video?: boolean;
 }
 
-export const getArticles = () => {
-	let articles: Article[] = [];
+const getName = (path: string): string => path.split('/').at(-1)!.replace('.md', '');
+
+export function getArticles () {
+	const articles: Article[] = [];
 
 	const modules = import.meta.glob<ImportModule<Article>>('../../articles/**/*.md', { eager: true });
 	for (const path in modules) {
@@ -31,6 +33,4 @@ export const getArticles = () => {
 	}
 
 	return { articles };
-};
-
-const getName = (path: string): string => path.split('/').at(-1)!.replace('.md', '');
+}

@@ -1,7 +1,6 @@
 <script>
-	$: isDark = false;
 	const toggle = () => {
-		isDark = window.document.documentElement.classList.toggle('dark');
+		window.document.documentElement.classList.toggle('dark');
 	};
 </script>
 

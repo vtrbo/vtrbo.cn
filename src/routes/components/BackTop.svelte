@@ -8,7 +8,8 @@
   }
 
   function onScroll() {
-    if (!scrollContainer()) return;
+    if (!scrollContainer()) 
+return;
     scrollTop = scrollContainer().scrollTop
   }
 
